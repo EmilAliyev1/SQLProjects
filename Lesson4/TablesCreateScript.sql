@@ -53,5 +53,4 @@ create table GroupsLectures(
     Id INT IDENTITY(1,1) PRIMARY KEY not null,
     GroupId INT not null FOREIGN KEY REFERENCES Groups(Id),
     LectureId INT not null FOREIGN KEY REFERENCES Lectures(Id)
-
 )
